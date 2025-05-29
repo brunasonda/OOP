@@ -3,11 +3,9 @@ import org.example.dragonball.Human;
 
 public class Main {
     public static void main(String[] args) {
-        Sayajins goku = new Sayajins("Goku", "sí", "negro", 6, 12);
-        System.out.println(goku.getAge());
+        Sayajins goku = new Sayajins("Goku", 12, "sí", "negro", 6);
         goku.setAge(24); //Goku age in the second dragon ball (dragon ball z)
-        System.out.println(goku.getAge());
-        Sayajins vegeta = new Sayajins("Vegeta", "sí", "negro", 5, 17);
+        Sayajins vegeta = new Sayajins("Vegeta", 17, "sí", "negro", 5);
         vegeta.setAge(29); //Vegeta age in the second dragon ball (dragon ball z)
 
         System.out.println(goku.introduce());

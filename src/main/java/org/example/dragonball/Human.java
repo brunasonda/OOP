@@ -1,36 +1,20 @@
 package org.example.dragonball;
 
-public class Human {
+public class Human extends Character {
     private String itens;
     private String gender;
     private String relationToASayajin;
 
     public Human(String name, int age, String gender, String itens, String relationToASayajin) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
         this.gender = gender;
         this.itens = itens;
         this.relationToASayajin = relationToASayajin;
     }
     public String introduce() {
-        return "Hola, soy " + this.name + " y tengo " + this.age +" años en DBZ! Soy " + this.gender + " y no salgo sín mi " + this.itens + ". Soy " + this.relationToASayajin +  " de un Sayajin!";
+        return "Hola, soy " + super.getName() + ". Soy un/a humano/a, y tengo " + super.getAge() +" años en DBZ! Soy " + this.gender + " y no salgo sín mi " + this.itens + ". Soy " + this.relationToASayajin +  " de un Sayajin!";
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     public String getItens() {
         return itens;
